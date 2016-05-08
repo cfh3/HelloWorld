@@ -1,10 +1,15 @@
 #!/usr/bin/env python
 
-def MyClass():
-    print "In MyClass"
+
+class MyClass:
+    def __init__(self):
+        print "In --> MyClass.__init__()"
+
 
 def main():
-    print "In main, that was run from the instantiated class"
+    print "In --> main()"
+
 
 if __name__ == "__main__":
     app = MyClass()
+    main()
